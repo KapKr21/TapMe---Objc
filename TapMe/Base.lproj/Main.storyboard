@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +13,81 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="1e337a48c9f3dbff6499d5ef92c5f1e9" translatesAutoresizingMaskIntoConstraints="NO" id="SSK-m6-yoi">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" red="0.0" green="0.32852089410000002" blue="0.57488495110000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap Me Fast" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K8u-g0-j95">
+                                <rect key="frame" x="16" y="47" width="343" height="138.5"/>
+                                <color key="backgroundColor" red="0.0048598507420000003" green="0.096086271109999996" blue="0.57499289509999996" alpha="0.20184075342465754" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="Zapfino" family="Zapfino" pointSize="35"/>
+                                <color key="textColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ten" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EMs-lf-Obp">
+                                <rect key="frame" x="16" y="199" width="343" height="109.5"/>
+                                <fontDescription key="fontDescription" name="Zapfino" family="Zapfino" pointSize="40"/>
+                                <color key="textColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XIb-98-FaP">
+                                <rect key="frame" x="16" y="460" width="343" height="148"/>
+                                <color key="backgroundColor" red="0.0" green="0.32852089410000002" blue="0.57488495110000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="Zapfino" family="Zapfino" pointSize="40"/>
+                                <state key="normal" title="Start">
+                                    <color key="titleColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="startButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HKc-Zh-Txg"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Zero" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dJq-tG-V93">
+                                <rect key="frame" x="16" y="322" width="343" height="135.5"/>
+                                <fontDescription key="fontDescription" name="Zapfino" family="Zapfino" pointSize="40"/>
+                                <color key="textColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="SSK-m6-yoi" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="04n-N5-wwu"/>
+                            <constraint firstItem="EMs-lf-Obp" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="9X9-YQ-529"/>
+                            <constraint firstItem="EMs-lf-Obp" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="179" id="B9m-QR-0l1"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="dJq-tG-V93" secondAttribute="trailing" constant="16" id="CK8-MH-Wrh"/>
+                            <constraint firstItem="dJq-tG-V93" firstAttribute="top" secondItem="K8u-g0-j95" secondAttribute="bottom" constant="131" id="F4z-8w-8KO"/>
+                            <constraint firstItem="XIb-98-FaP" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="FwB-PU-Wtq"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="XIb-98-FaP" secondAttribute="trailing" constant="16" id="GYP-GE-Xum"/>
+                            <constraint firstAttribute="bottom" secondItem="SSK-m6-yoi" secondAttribute="bottom" id="I0m-GH-VKN"/>
+                            <constraint firstItem="XIb-98-FaP" firstAttribute="top" secondItem="dJq-tG-V93" secondAttribute="bottom" constant="8" id="TV1-av-HLV"/>
+                            <constraint firstItem="dJq-tG-V93" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="XVp-27-NaS"/>
+                            <constraint firstItem="SSK-m6-yoi" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Ydn-gO-UJG"/>
+                            <constraint firstItem="K8u-g0-j95" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="ZOh-nt-hJy"/>
+                            <constraint firstItem="K8u-g0-j95" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="27" id="bs4-h6-jXX"/>
+                            <constraint firstItem="dJq-tG-V93" firstAttribute="top" secondItem="EMs-lf-Obp" secondAttribute="bottom" constant="8" id="ef5-1t-ldM"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="K8u-g0-j95" secondAttribute="trailing" constant="16" id="fBf-EY-qKr"/>
+                            <constraint firstItem="SSK-m6-yoi" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="lKv-zh-K1r"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="EMs-lf-Obp" secondAttribute="trailing" constant="16" id="msj-sL-xgp"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="XIb-98-FaP" secondAttribute="bottom" constant="59" id="x4m-l4-hyo"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="scoreLabel" destination="dJq-tG-V93" id="Hiz-hR-Jzl"/>
+                        <outlet property="startGame" destination="XIb-98-FaP" id="7My-55-ZfJ"/>
+                        <outlet property="timeLabel" destination="EMs-lf-Obp" id="fjD-5j-iQM"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="133.59999999999999" y="133.5832083958021"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="1e337a48c9f3dbff6499d5ef92c5f1e9" width="1600" height="1200"/>
+    </resources>
 </document>
